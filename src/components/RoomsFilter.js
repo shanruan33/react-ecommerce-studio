@@ -27,7 +27,7 @@ export const RoomsFilter = ({ rooms }) => {
     });
 
     let people = getUnique(rooms, 'capacity');
-    people = ['choose a size', ...people];
+    people = [...people];
     people = people.map((item, index) => {
         return <option value={item} key={index}>{item}</option>
     });
