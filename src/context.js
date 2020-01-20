@@ -33,7 +33,6 @@ class RoomProvider extends Component {
             let rooms = this.formatData(response.items);
             let featuredRooms = rooms.filter(room => room.featured === true);
             let maxPrice = Math.max(...rooms.map(item => item.price));
-            console.log(response);
             this.setState({
                 rooms,
                 sortedRooms: rooms,
@@ -74,7 +73,7 @@ class RoomProvider extends Component {
         const target = event.target;
         const name = event.target.name;
         const value = target.type === 'checkbox' ? target.checked : target.value;
-        console.log(value);
+        //console.log(value);
         this.setState({
             [name]: value
         }, this.filterRooms);
@@ -82,7 +81,6 @@ class RoomProvider extends Component {
     }
 
     filterRooms = () => {
-        console.log("hello");
         let {
             rooms, type, capacity, price, dance, fitness
         } = this.state;
@@ -128,7 +126,6 @@ class RoomProvider extends Component {
 
     // methods on My Cart Page
     increment = (slug) => {
-        console.log("this is increment method");
         let tempItemsInCart = [...this.state.cart];
         const selectedItem = tempItemsInCart.find(item => item.slug == slug);
         selectedItem.count = selectedItem.count + 1;
@@ -143,7 +140,6 @@ class RoomProvider extends Component {
 
     }
     decrement = (slug) => {
-        console.log("this is decrement method");
         let tempItemsInCart = [...this.state.cart];
         const selectedItem = tempItemsInCart.find(item => item.slug == slug);
         selectedItem.count = selectedItem.count - 1;
@@ -162,7 +158,6 @@ class RoomProvider extends Component {
 
     }
     removeItem = (slug) => {
-        console.log("this is removeItem method");
         let tempItemsInCart = [...this.state.cart];
         tempItemsInCart = tempItemsInCart.filter(item => item.slug !== slug);
 
@@ -182,7 +177,6 @@ class RoomProvider extends Component {
 
     }
     clearCart = () => {
-        console.log("this is clearCart method");
         let tempItemsInCart = [...this.state.cart];
         tempItemsInCart.map(item => item.inCart = false);
         this.setState(() => {
@@ -193,8 +187,6 @@ class RoomProvider extends Component {
     }
     checkout = () => {
         let tempItemsInCart = [...this.state.cart];
-        console.log(process.env.REACT_APP_STRIPE_TOKEN);
-
         const stripe = window.Stripe(process.env.REACT_APP_STRIPE_ID);
         stripe.redirectToCheckout({
             items: tempItemsInCart.map(item => ({
