@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="43" viewBox="0 0 250 43">
+  <defs>
+    <filter id="Flow_Wellness" x="11" y="3" width="229" height="40" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(-1348 -642)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="248" height="35" transform="translate(1349 643)" fill="none" stroke="#222" stroke-width="2"/>
+    <g transform="matrix(1, 0, 0, 1, 1348, 642)" filter="url(#Flow_Wellness)">
+      <text id="Flow_Wellness-2" data-name="Flow &amp; Wellness" transform="translate(14 27)" fill="#af9a7d" font-size="24" font-family="LucidaGrande-Bold, Lucida Grande" font-weight="700" letter-spacing="0.06em"><tspan x="0" y="0">Flow</tspan><tspan y="0" font-family="Kailasa-Bold, Kailasa"> </tspan><tspan y="0" fill="#000">&amp;</tspan><tspan y="0" font-family="Kailasa-Bold, Kailasa" fill="#000"> </tspan><tspan y="0" fill="#000">Wellness</tspan></text>
+    </g>
+  </g>
+</svg>
