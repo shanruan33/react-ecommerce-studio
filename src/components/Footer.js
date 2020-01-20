@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="footer-distributed">
             <div className="footer-left">
                 
-                <img src="https://i.postimg.cc/DzhHHYd5/logo.png" />
+                <img src="../images/logofooter.svg" />
                 <p className="footer-company-name">Flow &amp; Wellness Studio @ 2020</p>
             </div>
 
