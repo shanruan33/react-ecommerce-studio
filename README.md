@@ -8,8 +8,11 @@ This is a full-frontend SPA shopping Web App for choosing and purchasing studio 
 
 ## Tech:
 React: State & Lifecycle Management, Router DOM, Context (Provider, Consumer), React Icon, Hook (State, Effect), Event Handler, etc.
+
 HTML/CSS: Structure and Responsive Design
+
 Contentful: Content Management & Data Retrieve
+
 Paypal & Stripe: Payment Management
 
 ![](src/images/web_1.png)
