@@ -26,13 +26,13 @@ export const CartTotal = ({ value, history }) => {
             <h5>
                 <span>Total: </span><strong>$ {cartTotal}</strong>
             </h5>
-            <button className="btn-primary"
-                type="button"
-                onClick={() => checkout()} ////checkout stripe
-            >
-                <strong>checkout with card</strong>
-            </button>
-            <p>or</p>
+//             <button className="btn-primary"
+//                 type="button"
+//                 onClick={() => checkout()} ////checkout stripe
+//             >
+//                 <strong>checkout with card</strong>
+//             </button>
+//             <p>or</p>
             <PayPalButton total={cartTotal} clearCart={clearCart} history={history} />
         </div>
     )
