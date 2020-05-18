@@ -13,7 +13,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 export default class SingleRoom extends Component {
     constructor(props) {
         super(props);
-        console.log(this.props)
+        //console.log(this.props)
         this.state = {
             slug: this.props.match.params.slug,
             defaultBcg
@@ -25,7 +25,7 @@ export default class SingleRoom extends Component {
     render() {
         const { getRoom } = this.context;
         const room = getRoom(this.state.slug);
-        console.log(room);
+        //console.log(room);
         if (!room) {
             return <div className="error">
                 <h3>No such item could be found...</h3>

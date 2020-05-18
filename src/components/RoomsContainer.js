@@ -27,7 +27,7 @@ export const RoomsContainer = () => {
         <RoomConsumer>
             {
                 value => {
-                    console.log(value);
+                    //console.log(value);
                     const { loading, sortedRooms, rooms } = value;
                     if (loading) { return <Loading /> }
                     return (

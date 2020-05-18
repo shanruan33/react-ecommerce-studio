@@ -3,7 +3,7 @@ import CartItem from './CartItem'
 
 export const CartList = ({ value }) => {
     const { cart } = value;
-    console.log(value,cart);
+    //console.log(value,cart);
     return (
         <main className="Cart-content">
             <ul className="CartPage-items">
