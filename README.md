@@ -15,6 +15,6 @@ Contentful: Content Management & Data Retrieve
 
 Paypal & Stripe: Payment Management
 
-![](src/images/web_1.png)
+![](src/images/flow.jpg)
 
 ![](src/images/flowBig.png)
